@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Docs</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Toolbar with more controls -->
+        <div class="toolbar">
+            <button onclick="boldText()" title="Bold">B</button>
+            <button onclick="italicText()" title="Italic">I</button>
+            <button onclick="underlineText()" title="Underline">U</button>
+            <button onclick="alignLeft()" title="Left Align">L</button>
+            <button onclick="alignCenter()" title="Center Align">C</button>
+            <button onclick="alignRight()" title="Right Align">R</button>
+            <button onclick="createList()" title="Create List">•</button>
+            <button onclick="clearFormatting()" title="Clear Formatting">X</button>
+        </div>
+
+        <!-- Content editor area -->
+        <div class="editor">
+            <div class="content" contenteditable="true" id="editor" spellcheck="true">
+                <p>Start typing here...</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -55,3 +55,9 @@ function changeFontColor() {
   const color = document.getElementById("font-color").value;
   document.execCommand("foreColor", false, color);
 }
+
+// Function to change background color
+function changeBackgroundColor() {
+    const bgColor = document.getElementById('background-color').value
+    document.execCommand('backColor', false, bgColor)
+}

@@ -14,8 +14,9 @@ body {
 }
 
 .container {
-    width: 80%;
-    height: 80vh;
+    width: 85%;
+    max-width: 1200px;
+    height: 85vh;
     background-color: #fff;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
     display: flex;
@@ -27,8 +28,9 @@ body {
     padding: 10px;
     display: flex;
     justify-content: flex-start;
-    gap: 15px;
+    gap: 10px;
     flex-wrap: wrap;
+    align-items: center;
 }
 
 .toolbar button, .toolbar select, .toolbar input[type="color"] {

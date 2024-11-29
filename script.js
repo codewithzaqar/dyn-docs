@@ -33,6 +33,16 @@ function createList() {
   document.execCommand("insertUnorderedList");
 }
 
+// Function to create ordered list
+function createOrderedList() {
+    document.execCommand('insertOrderedList')
+}
+
+// Function to highlight text
+function highlightText() {
+    document.execCommand('backColor', false, 'yellow')
+}
+
 // Function to clear text formatting
 function clearFormatting() {
   document.execCommand("removeFormat");
@@ -60,4 +70,14 @@ function changeFontColor() {
 function changeBackgroundColor() {
     const bgColor = document.getElementById('background-color').value
     document.execCommand('backColor', false, bgColor)
+}
+
+// Undo action
+function undoAction() {
+    document.execCommand('undo')
+}
+
+// Redo action
+function redoAction() {
+    document.execCommand('redo')
 }

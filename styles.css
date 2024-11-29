@@ -79,6 +79,15 @@ body {
     margin-left: 20px;
 }
 
+.content ol {
+    margin-left: 20px;
+}
+
 .content li {
     margin-bottom: 5px;
+}
+
+/* Highlighting text */
+.highlight {
+    background-color: yellow;
 }

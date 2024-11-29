@@ -27,10 +27,11 @@ body {
     padding: 10px;
     display: flex;
     justify-content: flex-start;
-    gap: 10px;
+    gap: 15px;
+    flex-wrap: wrap;
 }
 
-.toolbar button {
+.toolbar button, .toolbar select, .toolbar input[type="color"] {
     background: #fff;
     border: 1px solid #ddd;
     padding: 8px 12px;
@@ -40,7 +41,7 @@ body {
     transition: background 0.2s ease;
 }
 
-.toolbar button:hover {
+.toolbar button:hover, .toolbar select:hover, .toolbar input[type="color"]:hover {
     background-color: #f4f4f4;
 }
 

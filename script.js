@@ -30,10 +30,28 @@ function alignRight() {
 
 // Function to create a list
 function createList() {
-  document.execCommand('insertUnorderedList')
+  document.execCommand("insertUnorderedList");
 }
 
-//Function to clear text formatting
+// Function to clear text formatting
 function clearFormatting() {
-    document.execCommand('removeFormat')
+  document.execCommand("removeFormat");
+}
+
+// Function to change font size
+function changeFontSize() {
+  const fontSize = document.getElementById("font-size").value;
+  document.execCommand("fontSize", false, fontSize);
+}
+
+// Function to change font family
+function changeFontFamily() {
+  const fontFamily = document.getElementById("font-family").value;
+  document.execCommand("fontName", false, fontFamily);
+}
+
+// Function to change font color
+function changeFontColor() {
+  const color = document.getElementById("font-color").value;
+  document.execCommand("foreColor", false, color);
 }

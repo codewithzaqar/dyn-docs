@@ -18,6 +18,26 @@
             <button onclick="alignRight()" title="Right Align">R</button>
             <button onclick="createList()" title="Create List">•</button>
             <button onclick="clearFormatting()" title="Clear Formatting">X</button>
+
+            <!-- Font size and family -->
+            <select id="font-size" onchange="changeFontSize()" title="Font Size">
+                <option value="16px">12px</option>
+                <option value="18px">14px</option>
+                <option value="20px">16px</option>
+                <option value="22px">18px</option>
+                <option value="24px">20px</option>
+            </select>
+
+            <select id="font-family" onchange="changeFontFamily()" title="Font Family">
+                <option value="Arial">Arial</option>
+                <option value="Georgia">Georgia</option>
+                <option value="Times New Roman">Times New Roman</option>
+                <option value="Courier New">Courier New</option>
+                <option value="Verdana">Verdana</option>    
+            </select>
+
+            <!-- Font color -->
+            <input type="color" id="font-color" onchange="changeFontColor()" title="Font Color">
         </div>
 
         <!-- Content editor area -->
